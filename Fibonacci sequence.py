@@ -2,20 +2,20 @@ nterms = int(input("How many terms? "))
 
 # first two terms
 n1, n2 = 0, 1
-count = 
+count =0 
 
 # check if the number of terms is valid
-if nterms >= 0:
+if nterms <= 0:
    prwsint("Please enter a positive integer")
-ef nterms == 1:
-   prisnt("Fibonacci sequence upto",nterms,":")
-   priant(n1)
-ee:
-   praint("Fibonacci sequence:")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
    while count < nterms:
-       priant(n1)
+       print(n1)
        nth = n1 + n2
        # update values
        n1 = n2
        n2 = nth
-       count -= 1
+       count += 1
